@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediScan Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        nav {
+            background-color: #76558a;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #e5d2f3;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header style="background-color:#76558a; color:white; text-align:center; padding:15px;">
+        <h1>MediScan Diagnostic Laboratory</h1>
+        <p>Your Health, Our Priority</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tests">Lab Tests</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#signin">Sign In</a>
+        <a href="#signup">Sign Up</a>
+    </nav>
+
+    <div class="layout">
+
+        <aside>
+            <h3>Our Services</h3>
+            <ul>
+                <li>Blood Test</li>
+                <li>Urine Test</li>
+                <li>Diabetes Test</li>
+                <li>Thyroid Test</li>
+            </ul>
+
+            <div class="offer">
+                <h3>Health Check-up</h3>
+                <p>Take care of your health.</p>
+            </div>
+        </aside>
+
+        <main>
+
+            <section id="home">
+                <h2>Welcome to MediScan</h2>
+                <p>
+                    MediScan Diagnostic Laboratory provides information about
+                    different laboratory tests and healthcare services.
+                </p>
+                <p>
+                    Patients can explore test details, view facilities and
+                    register using the forms provided on this website.
+                </p>
+            </section>
+
+            <section id="tests">
+                <h2>Laboratory Tests</h2>
+                <ol>
+                    <li>Blood Test</li>
+                    <li>Urine Test</li>
+                    <li>Thyroid Test</li>
+                    <li>Diabetes Test</li>
+                    <li>Liver Function Test</li>
+                </ol>
+            </section>
+
+            <section id="facilities">
+                <h2>Our Facilities</h2>
+
+                <table>
+                    <tr>
+                        <th>Facility</th>
+                        <th>Image</th>
+                    </tr>
+                    <tr>
+                        <td>Laboratory</td>
+                        <td><img src="Images/lab.jpg" alt="Laboratory" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td>Sample Collection</td>
+                        <td><img src="Images/sample.jpg" alt="Sample collection" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td>Urine Testing</td>
+                        <td><img src="Images/urine.jpg" alt="Urine testing" width="100"></td>
+                    </tr>
+                    <tr>
+                        <td>Equipment</td>
+                        <td><img src="Images/equipment.jpg" alt="Lab equipment" width="100"></td>
+                    </tr>
+                </table>
+
+                <h3>Test Price List</h3>
+                <table>
+                    <tr>
+                        <th>Test</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Blood Test</td>
+                        <td>₹200</td>
+                    </tr>
+                    <tr>
+                        <td>Urine Test</td>
+                        <td>₹150</td>
+                    </tr>
+                    <tr>
+                        <td>Thyroid Test</td>
+                        <td>₹400</td>
+                    </tr>
+                    <tr>
+                        <td>Diabetes Test</td>
+                        <td>₹250</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="signin">
+                <h2>Sign In</h2>
+
+                <form>
+                    <fieldset>
+                        <legend>Login Details</legend>
+
+                        <label>Username:</label>
+                        <input type="text" name="username" required>
+
+                        <label>Password:</label>
+                        <input type="password" name="password" required>
+
+                        <input type="submit" value="Sign In">
+                    </fieldset>
+                </form>
+            </section>
+
+            <section id="signup">
+                <h2>Patient Registration</h2>
+
+                <form>
+                    <fieldset>
+                        <legend>Registration Form</legend>
+
+                        <label>Full Name:</label>
+                        <input type="text" name="fullname" required>
+
+                        <label>Email:</label>
+                        <input type="email" name="email" required>
+
+                        <label>Username:</label>
+                        <input type="text" name="newusername" required>
+
+                        <label>Password:</label>
+                        <input type="password" name="newpassword" required>
+
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear">
+                    </fieldset>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2026 MediScan Diagnostic Laboratory</p>
+    </footer>
+
+</body>
+</html>

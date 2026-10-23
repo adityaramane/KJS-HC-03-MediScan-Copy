@@ -1,0 +1,188 @@
+
+/* Basic CSS for MediScan Laboratory */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f4fb;
+    color: #333333;
+}
+
+h1 {
+    margin: 5px;
+}
+
+h2 {
+    color: #76558a;
+    border-bottom: 1px solid #cbb8d8;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #76558a;
+}
+
+/* Main page layout */
+.layout {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+aside {
+    width: 25%;
+    padding: 12px;
+    background-color: #eee5f4;
+    border: 1px solid #cbb8d8;
+    height: fit-content;
+}
+
+aside li {
+    margin: 10px 0;
+}
+
+/* Simple sidebar offer */
+.offer {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #e0d0ec;
+    border: 1px solid #b69acb;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 2px #b69acb;
+    }
+    to {
+        box-shadow: 0 0 7px #b69acb;
+    }
+}
+
+/* Main content */
+main {
+    width: 75%;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Simple test cards */
+.test-card {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #cbb8d8;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+}
+
+th {
+    background-color: #76558a;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #aaaaaa;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f0e8f5;
+}
+
+/* Images */
+img {
+    border: 1px solid #aaaaaa;
+    padding: 3px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Forms */
+form {
+    width: 90%;
+    margin: 10px auto;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #b69acb;
+}
+
+legend {
+    color: #76558a;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid #aaaaaa;
+}
+
+input:focus {
+    outline: 1px solid #76558a;
+    background-color: #faf6fd;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 12px;
+    padding: 7px 15px;
+    background-color: #76558a;
+    color: white;
+    border: none;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #59376c;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #76558a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Smaller screens */
+@media (max-width: 650px) {
+    .layout {
+        display: block;
+        margin: 10px;
+    }
+
+    aside, main {
+        width: auto;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
